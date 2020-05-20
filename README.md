@@ -6,6 +6,7 @@ python3 -m venv v-flask_vue_spa
 windows下：py -3 -m venv v-flask_vue_spa
 在v-flask_vue_spa下，创建文件夹project，即此项目
 
+
 ## 客户端
 ```
 命令行vue ui，在v-flask_vue_spa/project下创建项目client
