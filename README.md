@@ -9,11 +9,7 @@ windows下：py -3 -m venv v-flask_vue_spa
 
 ## 客户端
 ```
-命令行vue ui，在v-flask_vue_spa/project下创建项目client
-在插件中，添加vue-router，new VueRouter()时指定mode: 'hash'
-在配置中，设置资源目录为static；这个不单设一个文件夹，python运行时网页出错
-进入client，运行npm install --save axios【区分--save和--save-dev】
-编译
+1
 
 
 ## 服务器
