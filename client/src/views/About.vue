@@ -13,20 +13,21 @@
 
 <script>
 import axios from "axios"
-//import qs from "query-string"
-/*
+import axiosLib from "axios";
+import qs from "query-string"
+
 //定制axios
 const myaxios = axiosLib.create({
   paramsSerializer: params => qs.stringify(params),
 });
 const getData = ({ data }) => data;
 myaxios.interceptors.response.use(getData);
-*/
+
 
 //举例restful
 const DataSource = {
   get: ({ id }) => axios.get(`api/data_sources/${id}`),
-  post: data => axios.post(`api/data_sources/${data.id}`, data),
+  post: data => myaxios.post(`api/data_sources/${data.id}`, data),
   delete: ({ id }) => axios.delete(`api/data_sources/${id}`),
 };
 
@@ -77,8 +78,8 @@ export default {
         ip:"192.168.1.1",
         port:3306,
       }
-      DataSource.post(newDataSource).then(response => {
-        this.dataSource = response.data;
+      DataSource.post(newDataSource).then(dataSource => {
+        this.dataSource = dataSource;
       });
     },
     
