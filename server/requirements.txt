@@ -1,0 +1,12 @@
+click
+Flask
+flask_cors
+Flask-Login
+Flask-RESTful
+redis
+SQLAlchemy
+SQLAlchemy-Searchable
+SQLAlchemy-Utils
+sqlparse
+rq
+rq-scheduler
